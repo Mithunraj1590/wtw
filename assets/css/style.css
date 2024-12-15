@@ -92,7 +92,7 @@ Last Update: 20-07-2024
   --primary-color: #ebc749;
   --title-color: #2956a1;
   --body-color: #6E7070;
-  --smoke-color: #E9F6F9;
+  --smoke-color: #f5f5f7;
   --smoke-color2: #F3F4F6;
   --black-color: #000000;
   --black-color2: #0D0D0C;
@@ -2549,7 +2549,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   overflow: hidden;
   vertical-align: middle;
   text-align: center;
-  background-color: var(--theme-color);
+  background-color: var(--title-color);
   color: var(--white-color);
   font-family: var(--body-font);
   display: -webkit-inline-box;
@@ -3445,7 +3445,7 @@ hr.title-line {
   height: var(--icon-size, 32px);
   line-height: var(--icon-size, 32px);
   background-color: #E9F6F9;
-  color: var(--theme-color);
+  color: var(--title-color);
   font-size: 16px;
   border-radius: 50%;
   text-align: center;
@@ -3459,7 +3459,7 @@ hr.title-line {
 }
 
 .th-social a:hover {
-  background-color: var(--theme-color);
+  background-color: var(--title-color);
   color: var(--white-color);
 }
 
@@ -7544,7 +7544,7 @@ ol.wp-block-rss {
   top: 0;
   right: 0;
   left: 0;
-  background-color: #f5f5f7;
+  background-color: var(--smoke-color);
   -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.07));
           filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.07));
   -webkit-animation: stickyAni 0.4s ease-in-out;
@@ -7999,15 +7999,7 @@ ol.wp-block-rss {
 
 /* Header 1 Start ---------------------------------- */
 .header-layout1 {
-  background-color: #f5f5f7;
-}
-.header-layout1 .header-logo{
-  width: 197px;
-  height: 86px;
-}
-.header-layout1 .header-logo img{
-  width: 100%;
-  height: 100%;
+  background-color: var(--smoke-color);
 }
 
 .header-layout1 .header-top {
@@ -8018,7 +8010,7 @@ ol.wp-block-rss {
 }
 
 .header-layout1 .header-top .header-notice {
-  color: var(--white-color);
+  color: var(--smoke-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -8190,7 +8182,7 @@ ol.wp-block-rss {
   width: 19%;
   height: 92px;
   z-index: -1;
-  background-color: #2956a1;
+  background-color: var(--title-color);
   /* Medium Large devices */
   /* Large devices */
   /* Medium devices */
@@ -17748,7 +17740,7 @@ span.select2-selection.select2-selection--single:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  max-width: 440px;
+  max-width: 460px;
 }
 
 .about-item:not(:last-child) {
@@ -17773,8 +17765,8 @@ span.select2-selection.select2-selection--single:focus {
 .about-item_img img {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  width: 33px;
-  height: 32px;
+  width: 35px;
+  height: 33px;
 }
 
 .about-item_img:hover {
@@ -18828,13 +18820,13 @@ span.select2-selection.select2-selection--single:focus {
 .th-team .th-social a {
   --icon-size: 32px;
   background-color: transparent;
-  border: 1px solid var(--theme-color);
-  color: var(--theme-color);
+  border: 1px solid var(--title-color);
+  color: var(--title-color);
   font-size: 14px;
 }
 
 .th-team .th-social a:hover {
-  background-color: var(--theme-color);
+  background-color: var(--title-color);
   color: var(--white-color);
 }
 
@@ -20944,7 +20936,7 @@ span.select2-selection.select2-selection--single:focus {
   position: relative;
   z-index: 2;
   border-radius: 16px;
-  background-color: #f5f5f7;
+  background-color: var(--smoke-color);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -22702,7 +22694,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .checklist li:before {
-  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 11.3151 21.9311 10.6462 21.8 10' stroke='%23ebc749' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M8 12.5C8 12.5 9.5 12.5 11.5 16C11.5 16 17.0588 6.83333 22 5' stroke='%23ebc749' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 3.33782C15.5291 2.48697 13.8214 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 11.3151 21.9311 10.6462 21.8 10' stroke='%231CA8CB' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M8 12.5C8 12.5 9.5 12.5 11.5 16C11.5 16 17.0588 6.83333 22 5' stroke='%231CA8CB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   font-family: var(--icon-font);
   position: absolute;
   left: 0;

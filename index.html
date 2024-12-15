@@ -76,7 +76,32 @@
     </div>
 
 
-<!--==============================
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div id="preloader" class="preloader ">
+     
+        <div class="preloader-inner">
+            <img src="assets/img/logo3.svg" alt="">
+        </div>
+
+        <div id="loader" class="th-preloader">
+            <div class="animation-preloader">
+                <div class="txt-loading">
+                    <span preloader-text="T" class="characters">T </span>
+
+                    <span preloader-text="O" class="characters">O </span>
+
+                    <span preloader-text="U" class="characters">U </span>
+
+                    <span preloader-text="R" class="characters">R </span>
+
+                    <span preloader-text="M" class="characters">M </span>
+                </div>
+            </div>
+        </div>
+
+    </div> <!--==============================
     Sidemenu
 ============================== -->
     <div class="sidemenu-wrapper sidemenu-info ">
@@ -85,7 +110,7 @@
             <div class="widget  ">
                 <div class="th-widget-about">
                     <div class="about-logo">
-                        <a href="home-travel.html"><img src="assets/img/logo.svg" alt="Tourm"></a>
+                        <a href="home-travel.html"><img src="assets/img/logo2.svg" alt="Tourm"></a>
                     </div>
                     <p class="about-text">Rapidiously myocardinate cross-platform intellectual capital model. Appropriately create interactive infrastructures</p>
                     <div class="th-social">
@@ -155,26 +180,26 @@
             </div>
         </div>
     </div>
-   <!--==============================
+  <!--==============================
     Mobile Menu
   ============================== -->
     <div class="th-menu-wrapper onepage-nav">
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href=""><img src="assets/img/logo2.svg" alt="Tourm"></a>
+                <a href="home-travel.html"><img src="assets/img/logo2.svg" alt="Tourm"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
                     <li class="menu-item-has-children mega-menu-wrap">
-                        <a class="active" href="">Home</a>
+                        <a class="active" href="home-travel.html">Home</a>
 
                         <ul class="sub-menu">
-                            <li><a href="">Home Travel</a></li>
-                            <li><a href="">Home Tour</a></li>
-                            <li><a href="">Home Agency</a></li>
-                            <li><a href="">Home Yacht</a></li>
-                            <li><a href="">Home Beach</a></li>
+                            <li><a href="home-travel.html">Home Travel</a></li>
+                            <li><a href="home-tour.html">Home Tour</a></li>
+                            <li><a href="home-agency.html">Home Agency</a></li>
+                            <li><a href="home-yacht.html">Home Yacht</a></li>
+                            <li><a href="home-beach.html">Home Beach</a></li>
                             <li><a href="home-resort.html">Home Resort</a></li>
                             <li><a href="home-countryside-hotel.html">Home Countryside Hotel</a></li>
                             <li><a href="home-forest.html">Home Forest</a></li>
@@ -252,28 +277,37 @@
             <!-- Main Menu Area -->
             <div class="menu-area">
                 <div class="container th-container">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a href=""><img src="assets/img/logo.svg" alt="Tourm"></a>
+                                <a href="home-travel.html"><img src="assets/img/logo.svg" alt="Tourm"></a>
                             </div>
                         </div>
-                        <div class="col-auto ms-auto">
+                        <div class="col-auto mx-auto">
                             <nav class="main-menu d-none d-xl-inline-block">
                                 <ul>
                                     <li>
-                                        <a class="active" href="">Home</a>
+                                        <a class="active" href="#">Home</a>
                                   
                                     </li>
-                                    <li><a href="">Pricing</a></li>
-                                    <li><a href="">About Us</a></li>                        
+                                    <li><a href="#">About Us</a></li>
                                     <li>
-                                        <a href="">Contact us</a>
+                                        <a href="#">pricing</a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#">Contact us</a>
                                     </li>
                                 </ul>
                             </nav>
+                            <button type="button" class="th-menu-toggle d-block d-xl-none"><i class="far fa-bars"></i></button>
                         </div>
-                     
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="header-button">
+                                <!-- <a href="#login-form" class="popup-content">Sign In / Register<i class="fa-regular fa-user"></i> -->
+                                <a href="#login-form" class="th-btn style3 th-icon popup-content">Enquire Now</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="logo-bg" data-mask-src="assets/img/logo_bg_mask.png"></div>
@@ -313,7 +347,6 @@ Hero Area
                                     Let’s make your best trip with us </h1>
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.6s">
                                     <a href="tour.html" class="th-btn th-icon">Explore Tours</a>
-                                   
                                 </div>
                             </div>
                         </div>
@@ -338,203 +371,201 @@ Hero Area
 
             </div>
             <div class="th-swiper-custom">
-                <button data-slider-prev="#heroSlide1" class="slider-arrow slider-prev"><img src="assets/img/icon/right-arrow.svg" alt=""></button>
                 <div class="slider-pagination"></div>
-                <button data-slider-next="#heroSlide1" class="slider-arrow slider-next"><img src="assets/img/icon/left-arrow.svg" alt=""></button>
             </div>
 
         </div>
     </div>
     <!--======== / Hero Section ========-->
-   
 
-    
+
+
+
+
     <!--==============================
 About Area  
 ==============================-->
-<div class="about-area position-relative overflow-hidden space" id="about-sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6">
-                <div class="img-box1">
-                    <div class="img1">
-                        <img src="assets/img/normal/about_1_1.jpg" alt="About">
-                    </div>
-                    <div class="img2">
-                        <img src="assets/img/normal/about_1_2.jpg" alt="About">
-                    </div>
-                    <div class="img3">
-                        <img src="assets/img/normal/about_1_3.jpg" alt="About">
+    <div class="about-area position-relative overflow-hidden space" id="about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="img-box1">
+                        <div class="img1">
+                            <img src="assets/img/normal/about_1_1.jpg" alt="About">
+                        </div>
+                        <div class="img2">
+                            <img src="assets/img/normal/about_1_2.jpg" alt="About">
+                        </div>
+                        <div class="img3">
+                            <img src="assets/img/normal/about_1_3.jpg" alt="About">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="ps-xl-4 ms-xl-2">
-                    <div class="title-area mb-20  me-xl-5">
-                        <span class="sub-title style1 ">Bangkok Awaits You!</span>
-                        <h2 class="sec-title mb-20   heading">Ranked as the Best Workation Destination</h2>
+                <div class="col-xl-6">
+                    <div class="ps-xl-4 ms-xl-2">
+                        <div class="title-area mb-20 ">
+                            <span class="sub-title style1 ">Bangkok Awaits You!</span>
+                            <h2 class="sec-title mb-20   heading">Ranked as the Best Workation Destination</h2>
 
-                        <p class="sec-text mb-30">It’s the perfect place to blend productivity and leisure seamlessly.
-                        </p>
+                            <p class="sec-text mb-30">It’s the perfect place to blend productivity and leisure seamlessly.
+                            </p>
+                        </div>
+                        <div class="about-item-wrap">
+                            <div class="about-item">
+                                <div class="about-item_img"><img src="assets/img/icon/cowork.svg" alt=""></div>
+                                <div class="about-item_centent">
+                                    <h5 class="box-title">World-Class Coworking Space</h5>
+                                    <p class="about-item_text">With high-speed connectivity to keep you productive.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item_img"><img src="assets/img/icon/accomodation.svg" alt=""></div>
+                                <div class="about-item_centent">
+                                    <h5 class="box-title">Affordable Luxury Accommodations</h5>
+                                    <p class="about-item_text">There are many variations of passages of available but the
+                                        majority.</p>
+                                </div>
+                            </div>
+                            <div class="about-item">
+                                <div class="about-item_img"><img src="assets/img/icon/food.svg" alt=""></div>
+                                <div class="about-item_centent">
+                                    <h5 class="box-title">Rich Culture and Delicious Cuisine</h5>
+                                    <p class="about-item_text">There are many variations of passages of available but the
+                                        majority.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-35"><a href="about.html" class="th-btn style3 th-icon">Learn More</a></div>
                     </div>
-                    <div class="about-item-wrap">
-                        <div class="about-item">
-                            <div class="about-item_img"><img src="assets/img/icon/cowork.svg" alt=""></div>
-                            <div class="about-item_centent">
-                                <h5 class="box-title">World-Class Coworking Space</h5>
-                                <p class="about-item_text">Modern facilities with high-speed internet to keep you productive.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about-item">
-                            <div class="about-item_img"><img src="assets/img/icon/accomodation.svg" alt=""></div>
-                            <div class="about-item_centent">
-                                <h5 class="box-title">Affordable Luxury Accommodations</h5>
-                                <p class="about-item_text"> Comfortable and budget-friendly accommodations.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about-item">
-                            <div class="about-item_img"><img src="assets/img/icon/food.svg" alt=""></div>
-                            <div class="about-item_centent">
-                                <h5 class="box-title">Rich Culture and Delicious Cuisine</h5>
-                                <p class="about-item_text">Vibrant experiences to unwind after work.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-35"><a href="about.html" class="th-btn style3 th-icon">Learn More</a></div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="shape-mockup shape1 d-none d-xl-block" data-top="12%" data-left="2%">
-        <img src="assets/img/shape/shape_1.png" alt="shape">
-    </div>
-    <div class="shape-mockup shape2 d-none d-xl-block" data-top="20%" data-left="3%">
-        <img src="assets/img/shape/shape_2.png" alt="shape">
-    </div>
-    <div class="shape-mockup shape3 d-none d-xl-block" data-top="14%" data-left="8%">
-        <img src="assets/img/shape/shape_3.png" alt="shape">
-    </div>
-
-    <div class="shape-mockup about-shape movingX d-none d-xxl-block" data-bottom="0%" data-right="8%">
-        <img src="assets/img/normal/about-slide-img.png" alt="shape">
-    </div>
-    <div class="shape-mockup about-rating d-none d-xxl-block" data-bottom="45%" data-right="2%">
-        <i class="fa-sharp fa-solid fa-star"></i><span>4.9k</span>
-    </div>
-    <div class="shape-mockup about-emoji d-none d-xxl-block" data-bottom="25%" data-right="22%"><img src="assets/img/icon/emoji.png" alt="">
-    </div>
-</div>
-
-    <!--==============================
-Service Area  
-==============================-->
-
-<section class="position-relative space">
-    <div class="container">
-        <div class="title-area text-center">
-            <span class="sub-title">Let’s Checkin</span>
-            <h2 class="sec-title">Affordable Pricing plans</h2>
+        <div class="shape-mockup shape1 d-none d-xl-block" data-top="12%" data-left="2%">
+            <img src="assets/img/shape/shape_1.png" alt="shape">
         </div>
-        <div class="row gy-4 justify-content-center">
+        <div class="shape-mockup shape2 d-none d-xl-block" data-top="20%" data-left="3%">
+            <img src="assets/img/shape/shape_2.png" alt="shape">
+        </div>
+        <div class="shape-mockup shape3 d-none d-xl-block" data-top="14%" data-left="8%">
+            <img src="assets/img/shape/shape_3.png" alt="shape">
+        </div>
 
-            <div class="col-xl-4 col-md-6">
-                <div class="price-card ">
-                    <div class="offer-tag">Popular</div>
-                    <div class="price-card_wrapp">
-                        <div class="price-card_icon">
-                            <img src="assets/img/icon/price_1_1.svg" alt="img">
-                        </div>
-                        <h3 class="box-title">Basic Plan</h3>
-                    </div>
-                    <div class="price-card_content">
-                        <h4 class="price-card_price">$785.00<span class="duration">/Per Night</span></h4>
-                        <p class="price-card_text">Essential services for basic and signle person seeking.</p>
-                        <div class="checklist">
-                            <ul>
-                                <li>Up to 2 members</li>
-                                <li>Room Service Fees</li>
-                                <li>Driver Service Feet</li>
-                                <li>Tour management</li>
-                                <li>Collaboration</li>
-                                <li>Entrance Fees</li>
-                                <li>Guide Fees in Destination</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="price-btn"><a href="contact.html" class="th-btn style3 w-100">Get Started</a></div>
-                </div>
+        <div class="shape-mockup about-shape movingX d-none d-xxl-block" data-bottom="0%" data-right="8%">
+            <img src="assets/img/normal/about-slide-img.png" alt="shape">
+        </div>
+        <div class="shape-mockup about-rating d-none d-xxl-block" data-bottom="45%" data-right="2%">
+            <i class="fa-sharp fa-solid fa-star"></i><span>4.9k</span>
+        </div>
+        <div class="shape-mockup about-emoji d-none d-xxl-block" data-bottom="25%" data-right="22%"><img src="assets/img/icon/emoji.png" alt="">
+        </div>
+    </div>
+
+    <section class="position-relative space">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">Let’s Checkin</span>
+                <h2 class="sec-title">Affordable Pricing plans</h2>
             </div>
+            <div class="row gy-4 justify-content-center">
 
-            <div class="col-xl-4 col-md-6">
-                <div class="price-card active">
-                    <div class="offer-tag">Popular</div>
-                    <div class="price-card_wrapp">
-                        <div class="price-card_icon">
-                            <img src="assets/img/icon/price_1_2.svg" alt="img">
+                <div class="col-xl-4 col-md-6">
+                    <div class="price-card ">
+                        <div class="offer-tag">Popular</div>
+                        <div class="price-card_wrapp">
+                            <div class="price-card_icon">
+                                <img src="assets/img/icon/price_1_1.svg" alt="img">
+                            </div>
+                            <h3 class="box-title">Basic Plan</h3>
                         </div>
-                        <h3 class="box-title">Advanced Plan</h3>
-                    </div>
-                    <div class="price-card_content">
-                        <h4 class="price-card_price">$980.00<span class="duration">/Per Night</span></h4>
-                        <p class="price-card_text">Essential services for basic and signle person seeking.</p>
-                        <div class="checklist">
-                            <ul>
-                                <li>Up to 2 members</li>
-                                <li>Room Service Fees</li>
-                                <li>Driver Service Feet</li>
-                                <li>Tour management</li>
-                                <li>Collaboration</li>
-                                <li>Entrance Fees</li>
-                                <li> Auto refresh ads</li>
-                            </ul>
+                        <div class="price-card_content">
+                            <h4 class="price-card_price">$785.00<span class="duration">/Per Night</span></h4>
+                            <p class="price-card_text">Essential services for basic and signle person seeking.</p>
+                            <div class="checklist">
+                                <ul>
+                                    <li>Up to 2 members</li>
+                                    <li>Room Service Fees</li>
+                                    <li>Driver Service Feet</li>
+                                    <li>Tour management</li>
+                                    <li>Collaboration</li>
+                                    <li>Entrance Fees</li>
+                                    <li>Guide Fees in Destination</li>
+                                </ul>
+                            </div>
                         </div>
+                        <div class="price-btn"><a href="contact.html" class="th-btn style3 w-100">Get Started</a></div>
                     </div>
-                    <div class="price-btn"><a href="contact.html" class="th-btn style3 w-100">Get Started</a></div>
                 </div>
-            </div>
 
-            <div class="col-xl-4 col-md-6">
-                <div class="price-card ">
-                    <div class="offer-tag">Popular</div>
-                    <div class="price-card_wrapp">
-                        <div class="price-card_icon">
-                            <img src="assets/img/icon/price_1_3.svg" alt="img">
+                <div class="col-xl-4 col-md-6">
+                    <div class="price-card active">
+                        <div class="offer-tag">Popular</div>
+                        <div class="price-card_wrapp">
+                            <div class="price-card_icon">
+                                <img src="assets/img/icon/price_1_2.svg" alt="img">
+                            </div>
+                            <h3 class="box-title">Advanced Plan</h3>
                         </div>
-                        <h3 class="box-title">Premium Plan</h3>
-                    </div>
-                    <div class="price-card_content">
-                        <h4 class="price-card_price">$1580.00<span class="duration">/Per Night</span></h4>
-                        <p class="price-card_text">Essential services for basic and signle person seeking.</p>
-                        <div class="checklist">
-                            <ul>
-                                <li>Up to 2 members</li>
-                                <li>Room Service Fees</li>
-                                <li>Driver Service Feet</li>
-                                <li>Tour management</li>
-                                <li>Collaboration</li>
-                                <li>Entrance Fees</li>
-                                <li> Auto refresh ads</li>
-                            </ul>
+                        <div class="price-card_content">
+                            <h4 class="price-card_price">$980.00<span class="duration">/Per Night</span></h4>
+                            <p class="price-card_text">Essential services for basic and signle person seeking.</p>
+                            <div class="checklist">
+                                <ul>
+                                    <li>Up to 2 members</li>
+                                    <li>Room Service Fees</li>
+                                    <li>Driver Service Feet</li>
+                                    <li>Tour management</li>
+                                    <li>Collaboration</li>
+                                    <li>Entrance Fees</li>
+                                    <li> Auto refresh ads</li>
+                                </ul>
+                            </div>
                         </div>
+                        <div class="price-btn"><a href="contact.html" class="th-btn style3 w-100">Get Started</a></div>
                     </div>
-                    <div class="price-btn"><a href="contact.html" class="th-btn style3 w-100">Get Started</a></div>
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <div class="price-card ">
+                        <div class="offer-tag">Popular</div>
+                        <div class="price-card_wrapp">
+                            <div class="price-card_icon">
+                                <img src="assets/img/icon/price_1_3.svg" alt="img">
+                            </div>
+                            <h3 class="box-title">Premium Plan</h3>
+                        </div>
+                        <div class="price-card_content">
+                            <h4 class="price-card_price">$1580.00<span class="duration">/Per Night</span></h4>
+                            <p class="price-card_text">Essential services for basic and signle person seeking.</p>
+                            <div class="checklist">
+                                <ul>
+                                    <li>Up to 2 members</li>
+                                    <li>Room Service Fees</li>
+                                    <li>Driver Service Feet</li>
+                                    <li>Tour management</li>
+                                    <li>Collaboration</li>
+                                    <li>Entrance Fees</li>
+                                    <li> Auto refresh ads</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-btn"><a href="contact.html" class="th-btn style3 w-100">Get Started</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="shape-mockup movingX d-none d-xxl-block" data-bottom="0%" data-right="3%">
-        <img class="gmovingX" src="assets/img/normal/about-slide-img.png" alt="shape">
-    </div>
-    <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-left="3%">
-        <img src="assets/img/shape/shape_6.png" alt="shape">
-    </div>
-    <div class="shape-mockup jump d-none d-xl-block" data-top="15%" data-left="6%">
-        <img src="assets/img/shape/shape_2_2.png" alt="shape">
-    </div>
-</section>
+        <div class="shape-mockup movingX d-none d-xxl-block" data-bottom="0%" data-right="3%">
+            <img class="gmovingX" src="assets/img/normal/about-slide-img.png" alt="shape">
+        </div>
+        <div class="shape-mockup d-none d-xl-block" data-bottom="0%" data-left="3%">
+            <img src="assets/img/shape/shape_6.png" alt="shape">
+        </div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="15%" data-left="6%">
+            <img src="assets/img/shape/shape_2_2.png" alt="shape">
+        </div>
+    </section>
+
 
 <!--==============================
 Brand Area  
@@ -646,27 +677,15 @@ Brand Area
             </div>
         </div>
     </div>
+
+
 <!--==============================
 	Footer Area
 ==============================-->
     <footer class="footer-wrapper footer-layout1">
         <div class="widget-area">
             <div class="container">
-                <div class="newsletter-area">
-                    <div class="newsletter-top">
-                        <div class="row gy-4 align-items-center">
-                            <div class="col-lg-5">
-                                <h2 class="newsletter-title text-capitalize mb-0">get updated the latest newsletter</h2>
-                            </div>
-                            <div class="col-lg-7">
-                                <form class="newsletter-form">
-                                    <input class="form-control " type="email" placeholder="Enter Email" required="">
-                                    <button type="submit" class="th-btn style3">Enquire Now <img src="assets/img/icon/plane.svg" alt=""></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-xl-3">
                         <div class="widget footer-widget">
@@ -691,11 +710,10 @@ Brand Area
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
 
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="">Pricing</a></li>
+                                    <li><a href="">Home</a></li>
                                     <li><a href="">About us</a></li>
+                                    <li><a href="">Pricing</a></li>
                                     <li><a href="">Contact</a></li>
-                                  
                                 </ul>
                             </div>
                         </div>
@@ -731,17 +749,49 @@ Brand Area
                             </div>
                         </div>
                     </div>
-                 
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Instagram Post</h3>
+                            <div class="sidebar-gallery">
+                                <div class="gallery-thumb">
+                                    <img src="assets/img/widget/gallery_1_1.jpg" alt="Gallery Image">
+                                    <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="gallery-thumb">
+                                    <img src="assets/img/widget/gallery_1_2.jpg" alt="Gallery Image">
+                                    <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="gallery-thumb">
+                                    <img src="assets/img/widget/gallery_1_3.jpg" alt="Gallery Image">
+                                    <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="gallery-thumb">
+                                    <img src="assets/img/widget/gallery_1_4.jpg" alt="Gallery Image">
+                                    <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="gallery-thumb">
+                                    <img src="assets/img/widget/gallery_1_5.jpg" alt="Gallery Image">
+                                    <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <div class="gallery-thumb">
+                                    <img src="assets/img/widget/gallery_1_6.jpg" alt="Gallery Image">
+                                    <a target="_blank" href="https://www.instagram.com/" class="gallery-btn"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="copyright-wrap" data-bg-src="assets/img/bg/copyright_bg_1.jpg">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-md-12 text-center">
-                        <p class="copyright-text">Copyright 2024 <a href="home-travel.html">worktowander</a>. All Rights Reserved.</p>
+                    <div class="col-md-6">
+                        <p class="copyright-text">Copyright 2024 <a href="home-travel.html">WorkToWander</a>. All Rights Reserved.</p>
                     </div>
-                  
+                    <div class="col-md-6 text-end">
+                        <p class="copyright-text">Designed by GC Tech</p>
+                    </div>
                 </div>
 
             </div>
@@ -764,48 +814,14 @@ Brand Area
 modal Area  
 ==============================-->
     <div id="login-form" class="popup-login-register mfp-hide">
-        <ul class="nav" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-menu" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Login</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-menu active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="true">Register</button>
-            </li>
-        </ul>
+      
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <h3 class="box-title mb-30">Sign in to your account</h3>
-                <div class="th-login-form">
-                    <form action="mail.php" method="POST" class="login-form ajax-contact">
-                        <div class="row">
-                            <div class="form-group col-12">
-                                <label>Username or email</label>
-                                <input type="text" class="form-control" name="email" id="email" required="required">
-                            </div>
-                            <div class="form-group col-12">
-                                <label>Password</label>
-                                <input type="password" class="form-control" name="pasword" id="pasword" required="required">
-                            </div>
-
-                            <div class="form-btn mb-20 col-12">
-                                <button class="th-btn btn-fw th-radius2 ">Send Message</button>
-                            </div>
-                        </div>
-                        <div id="forgot_url">
-                            <a href="my-account.html">Forgot password?</a>
-                        </div>
-                        <p class="form-messages mb-0 mt-3"></p>
-                    </form>
-                </div>
-            </div>
+           
             <div class="tab-pane fade active show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <h3 class="th-form-title mb-30">Sign in to your account</h3>
+                <h3 class="th-form-title mb-30">Enquire</h3>
                 <form action="mail.php" method="POST" class="login-form ajax-contact">
                     <div class="row">
-                        <div class="form-group col-12">
-                            <label>Username*</label>
-                            <input type="text" class="form-control" name="usename" id="usename" required="required">
-                        </div>
+                     
                         <div class="form-group col-12">
                             <label>First name*</label>
                             <input type="text" class="form-control" name="firstname" id="firstname" required="required">
@@ -818,16 +834,11 @@ modal Area
                             <label for="new_email">Your email*</label>
                             <input type="text" class="form-control" name="new_email" id="new_email" required="required">
                         </div>
-                        <div class="form-group col-12">
-                            <label for="new_email_confirm">Confirm email*</label>
-                            <input type="text" class="form-control" name="new_email_confirm" id="new_email_confirm" required="required">
-                        </div>
-                        <div class="statement">
-                            <span class="register-notes">A password will be emailed to you.</span>
-                        </div>
+                      
+                      
 
                         <div class="form-btn mt-20 col-12">
-                            <button class="th-btn btn-fw th-radius2 ">Sign up</button>
+                            <button class="th-btn btn-fw th-radius2 ">Send</button>
                         </div>
                     </div>
                     <p class="form-messages mb-0 mt-3"></p>

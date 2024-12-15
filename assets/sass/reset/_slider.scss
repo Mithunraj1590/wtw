@@ -77,7 +77,119 @@
     position: relative;
 }
 
+.slider-arrow {
+    display: inline-block;
+    padding: 0;
+    background-color: $white-color;
+    border: 1px solid $white-color;
+    box-shadow: 0px 20px 20px rgba(204, 204, 204, 0.25);
+    border-radius: 48px;
+    color: $theme-color;
+    position: absolute;
+    top: 50%;
+    left: var(--pos-x, -120px);
+    width: var(--icon-size, 88px);
+    height: var(--icon-size, 56px);
+    line-height: var(--icon-size, 56px);
+    font-size: var(--icon-font-size, 18px);
+    margin-top: calc(var(--icon-size, 56px) / -2);
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
 
+    @include xxl {
+        display: none !important;
+    }
+
+    &.style2 {
+        width: var(--icon-size, 56px);
+        height: var(--icon-size, 56px);
+        background-color: $theme-color;
+        color: $white-color;
+        border-color: $theme-color;
+
+        &:hover {
+            background-color: $title-color;
+            color: $white-color;
+            border-color: $title-color;
+            border-color: $title-color;
+        }
+    }
+
+    &.style3 {
+        background-color: $white-color;
+        color: $white-color;
+        --icon-size: 48px;
+        line-height: 48px;
+        border-radius: 50%;
+        border-color: $white-color;
+
+        &:hover {
+            background-color: $title-color;
+            color: $white-color;
+            border-color: $white-color;
+        }
+
+    }
+
+    &.style4 {
+        background-color: transparent;
+        color: $title-color;
+        border-color: #E4E4E4;
+        box-shadow: none;
+        font-size: var(--icon-font-size, 22px);
+
+        &:hover {
+            background-color: $title-color;
+            color: $white-color;
+            border-color: $title-color;
+            border-color: $title-color;
+        }
+    }
+
+    &.style5 {
+        border: 1px solid $title-color;
+
+        &:hover {
+            border-color: $theme-color; 
+        }
+        @include xxl {
+            display: inline-block !important; 
+        }
+    }
+    &.style6 {
+        --icon-size: 64px; 
+        border: 1px solid #E1E4E5;
+        box-shadow: none;
+
+        &:hover {
+            border-color: $theme-color; 
+        }
+        @include xxl {
+            display: inline-block !important; 
+        }
+    }
+
+    &.default {
+        position: relative;
+        --pos-x: 0;
+        margin-top: 0;
+    }
+
+    &.slider-next {
+        right: var(--pos-x, -120px);
+        left: auto;
+    }
+
+    &:hover {
+        background-color: $theme-color;
+        color: $white-color;
+        border-color: $theme-color;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
 
 .arrow-margin {
     .slider-arrow {
