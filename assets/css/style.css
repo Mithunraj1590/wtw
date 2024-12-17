@@ -290,7 +290,7 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   line-height: 1.18;
 }
 
@@ -2184,7 +2184,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   padding-top: 40px;
   display: block;
   text-align: center;
-  background-color: var(--smoke-color);
+  background-color: var(--title-color);
 }
 
 .th-menu-wrapper .mobile-logo svg {
@@ -2205,7 +2205,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   font-size: 18px;
   z-index: 1;
   color: var(--white-color);
-  background-color: var(--title-color);
+  background-color: var(--primary-color);
   border-radius: 50%;
 }
 
@@ -8805,7 +8805,7 @@ heding animation  end
 }
 
 .th-widget-contact {
-  max-width: 260px;
+  width: 100%;
   margin-bottom: -0.4em;
 }
 
@@ -8816,6 +8816,7 @@ heding animation  end
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -20981,7 +20982,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .price-card_content {
-  padding: 0 95px 30px;
+  padding: 0 50px 30px;
   /* Medium Large devices */
   /* Extra small devices */
 }
