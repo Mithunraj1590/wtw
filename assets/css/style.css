@@ -2858,17 +2858,17 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .play-btn:hover:after, .play-btn:hover::before,
 .play-btn:hover i {
   background-color: var(--theme-color);
-  color: var(--white-color);
+  color: var(--smoke-color);
 }
 
 .play-btn.style2 > i {
   background-color: rgba(255, 255, 255, 0.3);
-  color: var(--white-color);
+  color: var(--title-color);
 }
 
 .play-btn.style2:before, .play-btn.style2:after {
   background-color: transparent;
-  border: 1px solid var(--white-color);
+  border: 1px solid var(--title-color);
 }
 
 .play-btn.style3 > i {
@@ -2884,7 +2884,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 .play-btn.style3:hover > i {
-  background-color: var(--white-color);
+  background-color: var(--smoke-color);
   color: var(--theme-color);
 }
 
@@ -17741,7 +17741,6 @@ span.select2-selection.select2-selection--single:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  max-width: 460px;
 }
 
 .about-item:not(:last-child) {
@@ -21086,8 +21085,9 @@ span.select2-selection.select2-selection--single:focus {
 .price-card:hover .price-card_icon img, .price-card.active .price-card_icon img {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  -webkit-filter: none;
-          filter: none;
+          -webkit-filter: brightness(1) invert(1);
+          filter: brightness(1) invert(1);
+
 }
 
 .price-card:hover .price-card_price, .price-card.active .price-card_price {
@@ -30764,3 +30764,20 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.wp-contact{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 11;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  img{
+    transform: scale(1.04);
+  }
+}
