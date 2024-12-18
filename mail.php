@@ -1,57 +1,56 @@
 <?php
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// error_reporting(0); // Commented out for development purposes. You can enable it for debugging.
 
-    // Get form inputs
-    $firstname = isset($_POST['firstname']) ? trim($_POST['firstname']) : '';
-    $lastname = isset($_POST['lastname']) ? trim($_POST['lastname']) : '';
-    $new_email = isset($_POST['new_email']) ? trim($_POST['new_email']) : '';
-    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
-
-    // Check if all required fields are filled
-    if (!empty($firstname) && !empty($lastname) && !empty($new_email)) {
-
-        // Set the recipient email address
-        $to = "mithunraj1590@gmail.com";  // Replace with the email you want to send to
-
-        // Set the subject of the email
-        $subject = "New message from $firstname $lastname";
-
-        // Set the email headers
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-        $headers .= "From: $new_email" . "\r\n";  // Sender's email
-        $headers .= "Reply-To: $new_email" . "\r\n"; // Reply-to email
-
-        // Create the HTML email body
-        $body = "
-        <html>
-        <head>
-            <title>$subject</title>
-        </head>
-        <body>
-            <h2>New Message from Contact Form</h2>
-            <p><strong>First Name:</strong> $firstname</p>
-            <p><strong>Last Name:</strong> $lastname</p>
-            <p><strong>Email:</strong> $new_email</p>
-            <p><strong>Message:</strong></p>
-            <p>$message</p>
-        </body>
-        </html>
-        ";
-
+switch($_REQUEST['task']) {
+    case 'request':
+        
+        // Create the HTML content for the email
+        $content = '<table width="80%" border="0" align="left" cellpadding="3" cellspacing="3" style="border-right:1px solid #d3d3d3;font-size:12px;border-bottom:1px solid #d3d3d3;font-family:Verdana,Arial,Helvetica,sans-serif;font-weight:normal;border-top:1px solid #d3d3d3;border-left:1px solid #d3d3d3">
+                      <tr>
+                        <td colspan="3" align="left" valign="middle"><strong>Travel & Tour Booking</strong></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">First Name&nbsp;</td>
+                        <td valign="top">:</td>
+                        <td valign="top">&nbsp;'.$_REQUEST['firstname'].'</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Last Name&nbsp;</td>
+                        <td valign="top">:</td>
+                        <td valign="top">&nbsp;'.$_REQUEST['lastname'].'</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Email Id&nbsp;</td>
+                        <td valign="top">:</td>
+                        <td valign="top">&nbsp;'.$_REQUEST['new_email'].'</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Message</td>
+                        <td valign="top">:</td>
+                        <td valign="top">&nbsp;'.$_REQUEST['message'].'</td>
+                      </tr>
+                    </table>';
+        
+        // Set email parameters
+        $frm = 'mithunraj1590@gmail.com';
+        $adminname = "Travel & Tour Booking";
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";      
+        $headers .= "From:$frm\r\n"."Reply-To: $_POST[email]\r\n";  
+        
         // Send the email
-        if (mail($to, $subject, $body, $headers)) {
-            echo "Thank you! Your message has been sent.";
+        $mailSuccess = mail("mithunraj1590@gmail.com", "From Travel & Tour Booking", $content, $headers);
+        
+        // Check if the email was sent successfully
+        if ($mailSuccess) {
+            echo "<script>alert('Email has been sent successfully!');</script>";
         } else {
-            echo "Sorry, there was an issue sending your message. Please try again later.";
+            echo "<script>alert('Failed to send the email. Please try again later.');</script>";
         }
 
-    } else {
-        echo "Please fill out all required fields.";
-    }
-
-} else {
-    echo "Invalid request.";
+        break;
 }
+
+header("Location: " . $_SERVER['PHP_SELF']);
+exit;
 ?>
