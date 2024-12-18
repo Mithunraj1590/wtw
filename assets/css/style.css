@@ -11079,13 +11079,15 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
 
 .hero-style1 .hero-title {
   color: var(--white-color);
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .hero-style1 .hero-text {
   max-width: 582px;
   line-height: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 20px;
 }
 
 .hero-style1 .btn-group {
@@ -20974,6 +20976,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .price-card_icon img {
+  width: 43px;
+  height: 42px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-filter: brightness(0) invert(1);
@@ -21004,6 +21008,10 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--black-color2);
   position: relative;
   margin-bottom: 0;
+}
+.price-card p{
+  margin-bottom: 0;
+  color: #000;
 }
 
 .price-card_price {
@@ -21103,6 +21111,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .price-card:hover .box-title, .price-card.active .box-title {
+  color: var(--white-color);
+}
+
+.price-card:hover p, .price-card.active p {
   color: var(--white-color);
 }
 
