@@ -781,4 +781,43 @@
         });
     });
 
+    $(document).ready(function () {
+        $('#contactForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent the default form submission
+    
+            // Validate form fields
+            const firstname = $('#firstname').val().trim();
+            const lastname = $('#lastname').val().trim();
+            const email = $('#new_email').val().trim();
+            const message = $('#message').val().trim();
+    
+            if (!firstname || !lastname || !email || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+    
+            // Send form data via EmailJS
+            const serviceID = 'service_xaiwmts';
+            const templateID = 'template_s26eqld';
+    
+            emailjs.send(serviceID, templateID, {
+                firstname: firstname,
+                lastname: lastname,
+                email: email,
+                message: message,
+            }).then(
+                function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Message sent successfully!');
+                    $('#contactForm')[0].reset(); // Reset the form
+                },
+                function (error) {
+                    console.log('FAILED...', error);
+                    alert('Message sending failed. Please try again later.');
+                }
+            );
+        });
+    });
+    
+
 })(jQuery);
