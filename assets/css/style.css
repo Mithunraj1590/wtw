@@ -8679,6 +8679,7 @@ heding animation  end
   position: relative;
   z-index: 2;
   overflow: hidden;
+  background-color: var(--smoke-color);
 }
 
 .widget-area {
