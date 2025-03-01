@@ -419,6 +419,15 @@ p.has-drop-cap {
 .breadcumb-title {
   word-break: break-word;
 }
+.breadcumb-content p{
+  font-size: 26px;
+  color: #fff;
+  margin-top: 20px;
+}
+.breadcumb-content p span{
+  display: block;
+  font-size: 42px;
+}
 
 .blocks-gallery-caption,
 .wp-block-embed figcaption,
@@ -9203,7 +9212,7 @@ heding animation  end
   position: relative;
   background-color: var(--title-color);
   background-position: left top;
-  padding: 163px 0;
+  padding: 230px 0;
   overflow: hidden;
   text-align: center;
 }
@@ -17241,6 +17250,7 @@ span.select2-selection.select2-selection--single:focus {
   padding: 24px 24px 18px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  height: 100%;
   /* Extra small devices */
 }
 
@@ -26481,9 +26491,7 @@ span.select2-selection.select2-selection--single:focus {
   border-radius: 48px;
 }
 
-.page-content {
-  display: none;
-}
+
 
 #wp-travel-trip-wrapper {
   padding-top: var(--section-space);
@@ -30810,4 +30818,12 @@ span.select2-selection.select2-selection--single:focus {
   img{
     transform: scale(1.04);
   }
+}
+
+.th-list{
+  margin-bottom: 50px;
+}
+
+.tour-page-single{
+  margin-bottom: 50px;
 }
