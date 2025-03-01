@@ -30827,3 +30827,10 @@ span.select2-selection.select2-selection--single:focus {
 .tour-page-single{
   margin-bottom: 50px;
 }
+
+.tour-action a{
+  width: 100%;
+}
+.tour-action button{
+  width: 100%;
+}
