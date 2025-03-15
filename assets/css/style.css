@@ -30833,4 +30833,133 @@ span.select2-selection.select2-selection--single:focus {
 }
 .tour-action button{
   width: 100%;
+} 
+
+.workation-banner{
+  padding-top: 0;
+}
+
+.features-cta{
+ padding: 50px;
+ background-color: #fff6ef;
+ border-radius: 16px;
+ position: relative;
+ overflow: hidden;
+}
+.features-cta .sec-title{
+  margin-bottom: 40px;
+}
+.features-cta .sec-title span{
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--theme-color);
+}
+.features-cta p{
+  color: #000;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.features-cta figure{
+  -webkit-clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0%, 100%);
+  clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  width: 60%;
+  right: 0;
+  height: 100%;
+  top: 0;
+}
+
+.features-cta figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.company-size{
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.company-size .card{
+  text-align: center;
+  padding: 50px 0;
+  border: 2px solid var(--title-color);
+  cursor: pointer;
+  border-radius: 16px;
+}
+.company-size .card p{
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.company-size .card .checkedicon{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+  border-radius: 100%;
+  background-size: contain;
+}
+.company-size .card.checked{
+  border:2px solid #00d054;
+}
+.company-size .card.checked .checkedicon{
+  background-image: url(/assets/img/success.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.select-places{
+  text-align: center;
+  padding-bottom: 100px;
+}
+.select-places .tour-box.checked{
+  border: 1px solid green;
+}
+.select-places .tour-box.checked::before{
+  content: "";
+  position: absolute;
+  top: -.1rem;
+  left: -.1rem;
+  width: calc(100% + .1rem);
+  height: calc(100% + .1rem);
+
+  background-color: #0d2750;
+  opacity: .2;
+  pointer-events: none;
+}
+
+.select-places .tour-box .checkedicon{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+  border-radius: 100%;
+  background-size: contain;
+  background-color: #fff;
+}
+
+.select-places .tour-box.checked .checkedicon{
+  background-image: url(/assets/img/success.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-submit{
+  margin-bottom: 100px;
+}
+
+.section-submit .submit_wrap{
+  background-color: var(--title-color);
+  padding: 50px;
+}
+
+.section-submit .submit_wrap .sec-title{
+  color: #fff;
+  text-align: center;
 }
