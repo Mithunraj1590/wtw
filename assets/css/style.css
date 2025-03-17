@@ -30957,9 +30957,35 @@ span.select2-selection.select2-selection--single:focus {
 .section-submit .submit_wrap{
   background-color: var(--title-color);
   padding: 50px;
+  border-radius: 10px;
 }
 
+.section-submit .submit_wrap .inputs{
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.section-submit .submit_wrap .inputs button{
+  background-color: #fff;
+  color: #000;
+  margin-top: 20px;
+}
 .section-submit .submit_wrap .sec-title{
   color: #fff;
   text-align: center;
+}
+
+.offer-content{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.offer-content p{
+  font-size: 25px;
+  text-align: center;
+  color: red;
+  font-weight: 700;
 }
