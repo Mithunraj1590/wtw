@@ -30989,3 +30989,34 @@ span.select2-selection.select2-selection--single:focus {
   color: red;
   font-weight: 700;
 }
+
+
+.privacy-policy{
+  padding: 100px 0;
+}
+.privacy-policy h2{
+  font-size: 20px;
+  margin-bottom: 0;
+
+  &+p{
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  &+ul{
+    margin-top: 15px;
+  }
+}
+.privacy-policy p{
+ &+h2{
+  margin-top: 30px;
+ }
+}
+
+.privacy-policy ul{
+  &+h2{
+    margin-top: 30px;
+  }
+}
+.privacy-policy ul li{
+
+}
