@@ -30994,6 +30994,11 @@ span.select2-selection.select2-selection--single:focus {
 .privacy-policy{
   padding: 100px 0;
 }
+@media (max-width: 991px){
+  .privacy-policy{
+    padding: 50px 0;
+  }
+}
 .privacy-policy h2{
   font-size: 20px;
   margin-bottom: 0;
